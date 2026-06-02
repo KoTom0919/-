@@ -1,0 +1,209 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*上詰め*/
+h1 {
+  font-size: 18px;
+  margin: 5px 0;
+}
+.button-area {
+  padding: 5px 0;
+  margin: 0;
+  margin-bottom: 0 !important;
+}
+.table-container {
+  margin-top: 0 !important;
+}
+.table-container {
+  position: relative;
+  top: -45px;
+}
+
+/*上詰め終わり>*/
+
+button {
+    font-size: 12px;
+    padding: 10px 15px;
+    margin: 2px;
+}
+
+table {
+    table-layout: fixed;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.table-container {
+    max-height: 600px;
+    overflow-y: auto;
+    border: 2px solid black;
+}
+
+td {
+    min-width: 50px;
+    height: 20px;
+    border: 2px solid black;
+    font-size: 12px;
+    text-align: center;
+
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+th {
+    min-width: 50px;
+    height: 60px;
+    border: 2px solid black;
+    font-size: 12px;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+
+    position: sticky;
+    top: 60px;
+    background-color: white;
+    z-index: 10;
+}
+th input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 12px;
+    pointer-events: auto;
+}
+
+
+table {
+  width: max-content;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table-container {
+  max-height: none;
+  overflow: visible;
+  border: 2px solid black;
+}
+
+select {
+    font-size: 12px;
+    /*width: 40px;*/
+    height: 30px;
+    text-align: center;
+}
+
+.table-container {
+  margin-top: 0;
+}
+
+#monthSelect {
+    font-size: 15px;
+    width: 50px;
+    height: 30px;
+}
+
+@media print {
+
+    button,
+    input,
+    select#monthSelect {
+        display: none;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+button {
+  margin: 5px;
+}
+
+.button-area {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+  z-index: 20;
+}
+[contenteditable="true"] {
+  border-bottom: 1px dotted #999;
+  padding: 2px;
+}
+.guide-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.guide-box {
+  min-width: 220px;
+}
+
+.guide-box p {
+  margin: 3px 0;
+}
+
+.operation-guide ul{
+  margin-top: 20px;
+  text-align: left;
+}
+
+.operation-guide ul {
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.operation-guide li {
+  margin-bottom: 5px;
+}
+
+/* 就寝時間・起床時間を広く */
+th:nth-child(3),
+td:nth-child(3),
+th:nth-child(4),
+td:nth-child(4) {
+    width: 100px;
+}
+
+/* 中途覚醒 */
+th:nth-child(5),
+td:nth-child(5),
+th:nth-child(6),
+td:nth-child(6) {
+    width: 100px;
+}
+
+/* 自由1～5を狭く */
+th:nth-child(9),
+td:nth-child(9),
+th:nth-child(10),
+td:nth-child(10),
+th:nth-child(11),
+td:nth-child(11),
+th:nth-child(12),
+td:nth-child(12),
+th:nth-child(13),
+td:nth-child(13) {
+    max-width: 50px !important;
+}
+
+th[contenteditable="true"] {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+    height: 80px;
+}
